@@ -2,100 +2,109 @@ import React from 'react'
 
 const ProjectTemplate = () => {
   return (
-        <div className='mt-18 bg-white col-span-8 rounded-[18px] p-10'>
-            <h1 className='text-5xl tracking-tighter leading-14 font-medium'>Axis Bank - UPI SDK</h1>
-            <p className='mt-3 text-gray-600 text-sm'>Fintech</p>
-            <p className='mt-3 leading-8'>The goal of this redesign was to modernize the Axis Bank UPI app experience by eliminating clutter, reducing friction, and improving accessibility. From a user perspective, the objective was to create a fast, intuitive, and trustworthy flow for onboarding and transactions. From a business perspective, the objective was to attract more customers to the app and create a seamless platform that encourages engagement with Axis Bank’s lending and financial products.</p>
-            <div className="project-detail grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div className='mt-8 lg:mt-18 bg-white rounded-[18px] p-4 sm:p-6 lg:p-10 mx-4 lg:mx-0'>
+            <h1 className='text-2xl sm:text-3xl lg:text-5xl tracking-tighter leading-tight lg:leading-14 font-medium'>Axis Bank - UPI SDK</h1>
+            <p className='mt-3 text-gray-600 text-xs sm:text-sm'>Fintech</p>
+            <p className='mt-3 leading-6 lg:leading-8 text-sm sm:text-base'>The goal of this redesign was to modernize the Axis Bank UPI app experience by eliminating clutter, reducing friction, and improving accessibility. From a user perspective, the objective was to create a fast, intuitive, and trustworthy flow for onboarding and transactions. From a business perspective, the objective was to attract more customers to the app and create a seamless platform that encourages engagement with Axis Bank's lending and financial products.</p>
+            <div className="project-detail grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-8 lg:mt-12">
               <div className="w-full">
-                <h1 className='font-medium text-lg'>Client</h1>
-                <p className='mt-1 text-sm tracking-normal'>Axis Bank</p>
+                <h1 className='font-medium text-sm sm:text-base lg:text-lg'>Feature</h1>
+                <p className='mt-1 text-xs sm:text-sm tracking-normal'>UPI SDK</p>
               </div>
               <div className="w-full">
-                <h1 className='font-medium text-lg'>Industries</h1>
-                <p className='mt-1 text-sm tracking-normal'>Fintech</p>
+                <h1 className='font-medium text-sm sm:text-base lg:text-lg'>Industries</h1>
+                <p className='mt-1 text-xs sm:text-sm tracking-normal'>Fintech</p>
               </div>
               <div className="w-full">
-                <h1 className='font-medium text-lg'>Services</h1>
-                <p className='mt-1 text-sm tracking-normal'>UI/UX Design</p>
+                <h1 className='font-medium text-sm sm:text-base lg:text-lg'>Services</h1>
+                <p className='mt-1 text-xs sm:text-sm tracking-normal'>UI/UX Design</p>
               </div>
               <div className="w-full">
-                <h1 className='font-medium text-lg'>Release Date</h1>
-                <p className='mt-1 text-sm tracking-normal'>January 2025</p>
+                <h1 className='font-medium text-sm sm:text-base lg:text-lg'>Release Date</h1>
+                <p className='mt-1 text-xs sm:text-sm tracking-normal'>January 2025</p>
               </div>
             </div>
-            <div className="project-images bg-gray-100 w-full h-150 rounded-[18px] overflow-hidden mt-12 flex items-center justify-center">
-                <img src="/images/axis-thumbnail.png" className='h-full w-full' alt="" />
+            <div className="project-images bg-gray-100 w-full h-80 sm:h-80 lg:h-150 rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center">
+                <img src="/images/axis-thumbnail.png" className='h-full w-full object-contain' alt="Axis Bank UPI SDK" />
             </div>
 
-            <h1 className='text-3xl tracking-tighter leading-14 font-medium mt-12'>Main Goal</h1>
-            <p className='mt-2 leading-8'>To save job seekers time by streamlining the process of customizing resumes.</p>
-            <p className='mt-4 leading-8'>Job applicants often spend hours rewriting resumes to match job descriptions. ResumeX solves this by:</p>
-            <ul className='mt-4 leading-8 list-inside'>
-              <li className='mb-2 list-disc'>Providing an intuitive, easy-to-use interface</li>
-              <li className='mb-2 list-disc'>Leveraging AI-powered suggestions to rewrite and optimize content</li>
-              <li className='mb-2 list-disc'>Allowing users to create, edit, and save multiple tailored resumes</li>
+            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Exploration</h1>
+            <p className='mt-2 leading-6 lg:leading-8 text-sm sm:text-base'>To ground the redesign, I studied user frustrations through Play Store and App Store reviews.
+            The main issues surfaced were:</p>
+            <ul className='mt-4 leading-6 lg:leading-8 list-inside text-sm sm:text-base'>
+              <li className='mb-2 list-disc'>Overwhelming onboarding screens.</li>
+              <li className='mb-2 list-disc'>Too many manual inputs (leading to drop-offs).</li>
+              <li className='mb-2 list-disc'>Accessibility gaps, especially for older users.</li>
+              <li className='mb-2 list-disc'>Transaction flows that felt longer than competitors like GPay or PhonePe.</li>
             </ul>
-
-            <h1 className='text-3xl tracking-tighter leading-14 font-medium mt-12'>Challenges Addressed</h1>
-            <ul className='mt-4 leading-8 list-inside'>
-              <li className='mb-2 list-disc'>Long, repetitive process of customizing resumes</li>
-              <li className='mb-2 list-disc'>Difficulty matching resumes to specific job descriptions</li>
-              <li className='mb-2 list-disc'>Generic, unattractive AI-generated tools that fail to inspire trust</li>
+            <p className='mt-8 lg:mt-12 leading-6 lg:leading-8 text-sm sm:text-base'>I mapped <span className='font-semibold'>key user groups</span>:</p>
+            <ul className='mt-4 leading-6 lg:leading-8 list-inside text-sm sm:text-base'>
+              <li className='mb-2 list-disc'><span className='font-semibold'>New UPI users</span> unfamiliar with digital payments.</li>
+              <li className='mb-2 list-disc'><span className='font-semibold'>Experienced UPI users</span> expecting speed and reliability.</li>
+              <li className='mb-2 list-disc'><span className='font-semibold'>Business owners</span> managing multiple transactions daily.</li>
             </ul>
+            <p className='leading-6 lg:leading-8 text-sm sm:text-base'>The design focus was set on onboarding and transaction flows—two critical journeys for trust and adoption.</p>
 
-            <h1 className='text-3xl tracking-tighter leading-14 font-medium mt-16'>Design Approach</h1>
-            <ul className='mt-4 leading-8 list-inside'>
-              <li className='mb-2 list-disc'><span className='font-semibold'>Research & Inspiration</span> – Analyzed popular resume tools and identified pain points.</li>
-              <li className='mb-2 list-disc'><span className='font-semibold'>Wireframing</span> – Quick layouts for Login, Dashboard, Resume Creation, AI Rewriting, Saved Resumes.</li>
-              <li className='mb-2 list-disc'><span className='font-semibold'>UI Design</span> – 
-                <ul className='mt-2 ml-6 list-inside'>
-                  <li className='list-disc'>Modern, clean dashboard with light-ray elements</li>
-                  <li className='list-disc'>Consistent design system for forms, cards, and buttons</li>
-                  <li className='list-disc'>Focused on readability, efficiency, and visual trust</li>
-                </ul>
-              </li>
-              <li className='mb-2 list-disc'><span className='font-semibold'>Iterative Refinement</span> – Polished screens for fast and intuitive interactions</li>
+
+            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-12 lg:mt-16'>In Onboarding, What I Provided Is:</h1>
+            <p className='leading-6 lg:leading-8 mt-4 text-sm sm:text-base'>1. Auto-fetching details like mobile number (reducing typing effort).</p>
+            <div className="project-images bg-gray-100 w-full h-80 sm:h-80 lg:h-150 rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center py-4 lg:py-8">
+                <img src="/images/axis-mockup-1.png" className='h-full w-full object-contain' alt="Axis Bank Onboarding Mockup 1" />
+            </div>
+            <p className='leading-6 lg:leading-8 mt-8 lg:mt-12 text-sm sm:text-base'>2. Fewer steps with contextual guidance.</p>
+            <div className="project-images bg-gray-100 w-full h-80 sm:h-80 lg:h-150 rounded-[18px] overflow-hidden mt-8 lg:mt-10 flex items-center justify-center py-4 lg:py-8">
+                <img src="/images/axis-mockup-2.png" className='h-full w-full object-contain' alt="Axis Bank Onboarding Mockup 2" />
+            </div>
+            <p className='leading-6 lg:leading-8 mt-8 lg:mt-12 text-sm sm:text-base'>3. Intuitive microinteractions for progress and confirmations.</p>
+            <div className="project-images bg-gray-100 w-full h-80 sm:h-80 lg:h-150 rounded-[18px] overflow-hidden mt-8 lg:mt-10 flex items-center justify-center py-4 lg:py-8">
+                <img src="/images/axis-mockup-3.png" className='h-full w-full object-contain' alt="Axis Bank Onboarding Mockup 3" />
+            </div>
+
+            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-12 lg:mt-16'>In Transaction flow, What I Provided Is:</h1>
+            <p className='leading-6 lg:leading-8 mt-4 text-sm sm:text-base'>1. Streamlined navigation → reduced clicks.</p>
+            <div className="project-images bg-gray-100 w-full h-80 sm:h-80 lg:h-150 rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center py-4 lg:py-8">
+                <img src="/images/axis-mockup-4.png" className='h-full w-full object-contain' alt="Axis Bank Transaction Mockup 1" />
+            </div>
+
+            <p className='leading-6 lg:leading-8 mt-8 lg:mt-10 text-sm sm:text-base'>2. Clear "Send" and "Request" separation.</p>
+            <div className="project-images bg-gray-100 w-full h-80 sm:h-80 lg:h-150 rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center py-4 lg:py-8">
+                <img src="/images/axis-mockup-5.png" className='h-full w-full object-contain' alt="Axis Bank Transaction Mockup 2" />
+            </div>
+
+            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-12 lg:mt-16'>In Dashboard flow, What I Provided Is:</h1>
+            <p className='leading-6 lg:leading-8 mt-4 text-sm sm:text-base'>1. Reorganized for intuitive access to frequent actions.</p>
+            <p className='leading-6 lg:leading-8 mt-4 text-sm sm:text-base'>2. Quick access shortcuts for repeat payments and QR scanning.</p>
+            <div className="project-images bg-gray-100 w-full aspect-square rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center">
+                <img src="/images/axis-cover.png" className='h-full w-full object-cover' alt="Axis Bank Dashboard" />
+            </div>
+
+            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Impact</h1>
+            <p className='mt-2 leading-6 lg:leading-8 text-sm sm:text-base'>The redesigned app experience delivers:</p>
+            <ul className='mt-4 leading-6 lg:leading-8 list-inside text-sm sm:text-base'>
+            <li className='mb-2 list-disc'><span className='font-semibold'>Simplified onboarding</span> faster adoption for new users.</li>
+              <li className='mb-2 list-disc'><span className='font-semibold'>Reduced transaction steps</span> quicker and more reliable money transfers.</li>
+              <li className='mb-2 list-disc'><span className='font-semibold'>Improved accessibility</span> inclusivity for older users and business owners.</li>
+              <li className='mb-2 list-disc'><span className='font-semibold'>Modern, clutter-free UI</span> aligned with current design standards and user expectations.</li>
             </ul>
-        
-            <h1 className='text-2xl tracking-tighter leading-14 font-medium mt-12'>Clean & Fast Onboarding</h1>
-            <p className='leading-8'>Simple, modern login interface that ensures quick and intuitive access to ResumeX. Consistent branding builds trust and clarity for users.</p>
-            <div className="project-images bg-gray-100 w-full h-180 rounded-[18px] overflow-hidden mt-12 flex items-center justify-center">
-                    <img src="/images/resumeX-login.png" className='w-220' alt="" />
-                </div>
+            <p className='mt-2 leading-6 lg:leading-8 text-sm sm:text-base'>From a business perspective, the redesign creates a stronger foundation to attract new customers, opening doors for lending opportunities and cross-selling financial products.</p>
 
-            <h1 className='text-2xl tracking-tighter leading-14 font-medium mt-12'>Modern Light-Ray Workspace</h1>
-            <p className='leading-8'>A fresh, motivating dashboard giving users immediate access to resumes and actions. Designed for efficiency and visual clarity.</p>
-            <div className="project-images bg-gray-100 w-full h-180 rounded-[18px] overflow-hidden mt-12 flex items-center justify-center">
-                    <img src="/images/resumeX-dashboard.png" className='w-220' alt="" />
+
+            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Reflection & Next Steps</h1>
+            <p className='mt-2 leading-6 lg:leading-8 text-sm sm:text-base'>One challenge was making the dashboard intuitive while keeping it lightweight—balancing simplicity with quick access to multiple services.</p>
+            <p className='mt-2 leading-6 lg:leading-8 text-sm sm:text-base'>If given more time, I'd explore adding <span className='font-semibold'>"Hello UPI"</span> — a voice-first interaction feature, to further improve accessibility and hands-free transactions.</p>
+
+
+            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>From Screens to Experience</h1>
+            <p className='mt-2 leading-6 lg:leading-8 text-sm sm:text-base'>Explore the redesigned app in action—experience seamless onboarding and faster payments.</p>
+            <div className="project-images bg-gray-100 w-full h-[90vh] sm:h-[500px] lg:h-[600px] rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center p-2 sm:p-4 lg:p-6">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://embed.figma.com/proto/4j7d2haMeWW5ou6sCULbdJ/Axis-Bank?page-id=0%3A1&node-id=1-198&p=f&viewport=612%2C381%2C0.03&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A194&embed-host=share"
+                // allowFullScreen
+                title="Axis Bank App Prototype"
+              ></iframe>
             </div>
-
-            <h1 className='text-2xl tracking-tighter leading-14 font-medium mt-12'>Step-by-Step Resume Builder</h1>
-            <p className='leading-8'>Guided interface for quickly creating new resumes. Clear inputs and layout reduce friction, helping users focus on content, not formatting.</p>
-            <div className="project-images bg-gray-100 w-full h-180 rounded-[18px] overflow-hidden mt-12 flex items-center justify-center">
-                    <img src="/images/resumeX-resume-builder.png" className='w-220' alt="" />
-            </div>
-
-            <h1 className='text-2xl tracking-tighter leading-14 font-medium mt-12'>Rewrite Resume (AI-powered)</h1>
-            <p className='leading-8'>AI-powered rewriting interface to customize resumes for specific job descriptions. Streamlines the process while keeping the experience user-friendly.</p>
-            <div className="project-images bg-gray-100 w-full h-180 rounded-[18px] overflow-hidden mt-12 flex items-center justify-center">
-                    <img src="/images/resumeX-resume-rewritter.png" className='w-220' alt="" />
-            </div>
-
-            <h1 className='text-2xl tracking-tighter leading-14 font-medium mt-12'>Resume Optimization & ATS Check</h1>
-            <p className='leading-8'>Evaluate resumes for ATS compatibility and receive actionable suggestions. Helps users improve visibility and chances of selection.</p>
-            <div className="project-images bg-gray-100 w-full h-180 rounded-[18px] overflow-hidden mt-12 flex items-center justify-center">
-                    <img src="/images/resumeX-resume-ats.png" className='w-220' alt="" />
-            </div>
-
-            <h1 className='text-2xl tracking-tighter leading-14 font-medium mt-12'>Organized Resume Management</h1>
-            <p className='leading-8'>Store and manage multiple tailored resumes efficiently. Clear layout and quick access allow users to reuse and update resumes easily.</p>
-            <div className="project-images bg-gray-100 w-full h-180 rounded-[18px] overflow-hidden mt-12 flex items-center justify-center">
-                    <img src="/images/resumeX-resume-saved.png" className='w-220' alt="" />
-            </div>
-
-            <h1 className='text-4xl tracking-tighter leading-14 font-normal mt-12 text-center'>Thank you for taking the time to explore <span className='font-semibold'>ResumeX.</span></h1>
-            <p className='leading-8 text-center max-w-xl mx-auto mt-4 mb-16'>This project was a great opportunity to design a user-focused, efficient, and modern UI that helps job seekers save time and apply smarter.</p>
         </div>
   )
 }
