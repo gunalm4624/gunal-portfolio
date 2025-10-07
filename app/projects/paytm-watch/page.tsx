@@ -5,15 +5,15 @@ const ProjectTemplate = () => {
         <div className='mt-8 lg:mt-18 bg-white rounded-[18px] p-4 sm:p-6 lg:p-10 mx-4 lg:mx-0'>
             <h1 className='text-2xl sm:text-3xl lg:text-5xl tracking-tighter leading-tight lg:leading-14 font-medium'>Paytm Watch</h1>
             <p className='mt-3 text-gray-600 text-xs sm:text-sm'>Fintech</p>
-            <p className='mt-3 leading-6 lg:leading-8 text-sm sm:text-base'>ResumeX is a web-based MVP that helps job seekers create, rewrite, and save resumes quickly, using a clean, modern UI and AI-powered rewriting. Its goal is to reduce the time and effort required to apply for jobs, providing an intuitive and efficient resume-building experience.</p>
+            <p className='mt-3 leading-6 lg:leading-8 text-sm sm:text-base'>Small shop owners — from grocery stores to salons, bakeries, and kirana shops — constantly juggle managing sales, tracking payments, and running daily operations. Checking UPI payments on a phone multiple times a day is time-consuming and disruptive.</p>
             <div className="project-detail grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-8 lg:mt-12">
               <div className="w-full">
                 <h1 className='font-medium text-sm sm:text-base lg:text-lg'>Type</h1>
-                <p className='mt-1 text-xs sm:text-sm tracking-normal'>Personal Project</p>
+                <p className='mt-1 text-xs sm:text-sm tracking-normal'>Conceptual Project</p>
               </div>
               <div className="w-full">
                 <h1 className='font-medium text-sm sm:text-base lg:text-lg'>Industries</h1>
-                <p className='mt-1 text-xs sm:text-sm tracking-normal'>Education</p>
+                <p className='mt-1 text-xs sm:text-sm tracking-normal'>Fintech</p>
               </div>
               <div className="w-full">
                 <h1 className='font-medium text-sm sm:text-base lg:text-lg'>Services</h1>
@@ -21,81 +21,140 @@ const ProjectTemplate = () => {
               </div>
               <div className="w-full">
                 <h1 className='font-medium text-sm sm:text-base lg:text-lg'>Release Date</h1>
-                <p className='mt-1 text-xs sm:text-sm tracking-normal'>October 2025</p>
+                <p className='mt-1 text-xs sm:text-sm tracking-normal'>JUN 2024</p>
               </div>
             </div>
             <div className="project-images bg-gray-100 w-full h-64 sm:h-80 lg:h-150 rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center p-4 sm:p-6 lg:p-8">
-                <img src="/images/resumeX-cover.png" className='h-full w-full object-contain' alt="ResumeX Cover" />
+                <img src="/images/paytm-watch-cover.png" className='h-190 object-contain' alt="ResumeX Cover" />
             </div>
 
-            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Main Goal</h1>
-            <p className='mt-2 leading-6 lg:leading-8 text-sm sm:text-base'>To save job seekers time by streamlining the process of customizing resumes.</p>
-            <p className='mt-4 leading-6 lg:leading-8 text-sm sm:text-base'>Job applicants often spend hours rewriting resumes to match job descriptions. ResumeX solves this by:</p>
+            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Key challenges</h1>
             <ul className='mt-4 leading-6 lg:leading-8 list-inside text-sm sm:text-base'>
-              <li className='mb-2 list-disc'>Providing an intuitive, easy-to-use interface</li>
-              <li className='mb-2 list-disc'>Leveraging AI-powered suggestions to rewrite and optimize content</li>
-              <li className='mb-2 list-disc'>Allowing users to create, edit, and save multiple tailored resumes</li>
+              <li className='mb-2 list-disc'>Frequent payments make tracking totals difficult.</li>
+              <li className='mb-2 list-disc'>High-value transactions can go unnoticed.</li>
+              <li className='mb-2 list-disc'>Pending or delayed settlements create stress.</li>
+              <li className='mb-2 list-disc'>Daily sales targets are hard to monitor while attending customers.</li>
+              <li className='mb-2 list-disc'>Existing tools are mobile-only, requiring the owner to step away from operations.</li>
             </ul>
 
-            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Challenges Addressed</h1>
+            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Exploration</h1>
+            <p className='leading-6 lg:leading-8 text-sm sm:text-base mt-2'>I explored how to bring real-time business insights to the wrist, focusing on speed, glanceability, and simplicity.</p>
+
+            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-12 lg:mt-12'>Research & Insights</h1>
+            <p className='leading-6 lg:leading-8 text-sm sm:text-base mt-2'>5-card swipe-based dashboard, fully UPI-focused:</p>
             <ul className='mt-4 leading-6 lg:leading-8 list-inside text-sm sm:text-base'>
-              <li className='mb-2 list-disc'>Long, repetitive process of customizing resumes</li>
-              <li className='mb-2 list-disc'>Difficulty matching resumes to specific job descriptions</li>
-              <li className='mb-2 list-disc'>Generic, unattractive AI-generated tools that fail to inspire trust</li>
+              <li className='mb-2 list-disc'>Dashboard</li>
+              <li className='mb-2 list-disc'>Today’s UPI Summary</li>
+              <li className='mb-2 list-disc'>Recent Payments</li>
+              <li className='mb-2 list-disc'>Big Payment Alerts</li>
+              <li className='mb-2 list-disc'>Pending Settlements</li>
             </ul>
 
-            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-12 lg:mt-16'>Design Approach</h1>
+            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-12 lg:mt-12'>Design Decisions:</h1>
             <ul className='mt-4 leading-6 lg:leading-8 list-inside text-sm sm:text-base'>
-              <li className='mb-2 list-disc'><span className='font-semibold'>Research & Inspiration</span> – Analyzed popular resume tools and identified pain points.</li>
-              <li className='mb-2 list-disc'><span className='font-semibold'>Wireframing</span> – Quick layouts for Login, Dashboard, Resume Creation, AI Rewriting, Saved Resumes.</li>
-              <li className='mb-2 list-disc'><span className='font-semibold'>UI Design</span> – 
-                <ul className='mt-2 ml-6 list-inside'>
-                  <li className='list-disc'>Modern, clean dashboard with light-ray elements</li>
-                  <li className='list-disc'>Consistent design system for forms, cards, and buttons</li>
-                  <li className='list-disc'>Focused on readability, efficiency, and visual trust</li>
-                </ul>
-              </li>
-              <li className='mb-2 list-disc'><span className='font-semibold'>Iterative Refinement</span> – Polished screens for fast and intuitive interactions</li>
+              <li className='mb-2 list-disc'>Short, bold titles with large amounts for glanceable reading.</li>
+              <li className='mb-2 list-disc'>Haptic feedback for new payments or big alerts.</li>
+              <li className='mb-2 list-disc'>Personalization via toggle switches for each card.</li>
+              <li className='mb-2 list-disc'>Quick setup via scanning the shop’s Paytm QR code.</li>
+            </ul>
+
+            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-12 lg:mt-12'>Ideation</h1>
+            <ul className='mt-4 leading-6 lg:leading-8 list-inside text-sm sm:text-base'>
+              <li className='mb-2 list-disc'>Small shop owners rely heavily on UPI apps (Paytm, PhonePe, GPay).</li>
+              <li className='mb-2 list-disc'>They prefer quick glance info over deep navigation.</li>
+              <li className='mb-2 list-disc'>Alerts for high-value payments and pending settlements are critical.</li>
+              <li className='mb-2 list-disc'>Quick access to actions like showing QR codes is essential.</li>
             </ul>
         
-            <h1 className='text-lg sm:text-xl lg:text-2xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Clean & Fast Onboarding</h1>
-            <p className='leading-6 lg:leading-8 text-sm sm:text-base mt-2'>Simple, modern login interface that ensures quick and intuitive access to ResumeX. Consistent branding builds trust and clarity for users.</p>
+            <h1 className='text-lg sm:text-xl lg:text-2xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Setup Screen</h1>
+            <p className='leading-6 lg:leading-8 text-sm sm:text-base mt-2'>Scan Paytm QR → auto-link shop & UPI.</p>
             <div className="project-images bg-gray-100 w-full h-64 sm:h-80 lg:h-180 rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center p-4 sm:p-6 lg:p-8">
-                    <img src="/images/resumeX-login.png" className='h-full w-full object-contain' alt="ResumeX Login" />
+                    <img src="/images/payrm-watch-setup.png" className='h-full w-full object-contain' alt="ResumeX Login" />
+                </div>
+                
+            <p className='leading-6 lg:leading-8 text-sm sm:text-base mt-12'>Auto-sync shop name, UPI ID, and payment details.</p>
+            <div className="project-images bg-gray-100 w-full h-64 sm:h-80 lg:h-180 rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center p-4 sm:p-6 lg:p-8">
+                    <img src="/images/payrm-watch-success.png" className='h-full w-full object-contain' alt="ResumeX Login" />
                 </div>
 
-            <h1 className='text-lg sm:text-xl lg:text-2xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Modern Light-Ray Workspace</h1>
-            <p className='leading-6 lg:leading-8 text-sm mt-2 sm:text-base'>A fresh, motivating dashboard giving users immediate access to resumes and actions. Designed for efficiency and visual clarity.</p>
+            <h1 className='text-lg sm:text-xl lg:text-2xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Personalization Screen</h1>
+            <p className='leading-6 lg:leading-8 text-sm mt-2 sm:text-base'>Choose which of the 6 cards to display.</p>
             <div className="project-images bg-gray-100 w-full h-64 sm:h-80 lg:h-180 rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center p-4 sm:p-6 lg:p-8">
-                    <img src="/images/resumeX-dashboard.png" className='h-full w-full object-contain' alt="ResumeX Dashboard" />
+                    <img src="/images/payrm-watch-personalisation.png" className='h-full w-full object-contain' alt="ResumeX Dashboard" />
             </div>
 
-            <h1 className='text-lg sm:text-xl lg:text-2xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Step-by-Step Resume Builder</h1>
-            <p className='leading-6 lg:leading-8 text-sm sm:text-base mt-2'>Guided interface for quickly creating new resumes. Clear inputs and layout reduce friction, helping users focus on content, not formatting.</p>
+            <h1 className='text-lg sm:text-xl lg:text-2xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Real-Time Setup Status</h1>
+            <p className='leading-6 lg:leading-8 text-sm sm:text-base mt-2'>Keeps shop owners informed during the initial setup.</p>
             <div className="project-images bg-gray-100 w-full h-64 sm:h-80 lg:h-180 rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center p-4 sm:p-6 lg:p-8">
-                    <img src="/images/resumeX-resume-builder.png" className='h-full w-full object-contain' alt="ResumeX Resume Builder" />
+                    <img src="/images/payrm-watch-status.png" className='h-full w-full object-contain' alt="ResumeX Resume Builder" />
             </div>
 
-            <h1 className='text-lg sm:text-xl lg:text-2xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Rewrite Resume (AI-powered)</h1>
-            <p className='leading-6 lg:leading-8 text-sm sm:text-base mt-2'>AI-powered rewriting interface to customize resumes for specific job descriptions. Streamlines the process while keeping the experience user-friendly.</p>
+            
+            <h1 className='text-lg sm:text-xl lg:text-2xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Swipeable Dashboard</h1>
+            <p className='leading-6 lg:leading-8 text-sm sm:text-base mt-2'>Instant glanceable insight into all key metrics</p>
             <div className="project-images bg-gray-100 w-full h-64 sm:h-80 lg:h-180 rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center p-4 sm:p-6 lg:p-8">
-                    <img src="/images/resumeX-resume-rewritter.png" className='h-full w-full object-contain' alt="ResumeX AI Rewriter" />
+                    <img src="/images/payrm-watch-dashboard.png" className='h-full w-full object-contain' alt="ResumeX Resume Builder" />
             </div>
 
-            <h1 className='text-lg sm:text-xl lg:text-2xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Resume Optimization & ATS Check</h1>
-            <p className='leading-6 lg:leading-8 text-sm sm:text-base mt-2'>Evaluate resumes for ATS compatibility and receive actionable suggestions. Helps users improve visibility and chances of selection.</p>
+            <h1 className='text-lg sm:text-xl lg:text-2xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Today’s UPI Summary</h1>
+            <p className='leading-6 lg:leading-8 text-sm sm:text-base mt-2'>Total sales & transaction count for each days.</p>
             <div className="project-images bg-gray-100 w-full h-64 sm:h-80 lg:h-180 rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center p-4 sm:p-6 lg:p-8">
-                    <img src="/images/resumeX-resume-ats.png" className='h-full w-full object-contain' alt="ResumeX ATS Check" />
+                    <img src="/images/payrm-watch-today-payment.png" className='h-full w-full object-contain' alt="ResumeX Resume Builder" />
             </div>
 
-            <h1 className='text-lg sm:text-xl lg:text-2xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Organized Resume Management</h1>
-            <p className='leading-6 lg:leading-8 text-sm sm:text-base mt-2'>Store and manage multiple tailored resumes efficiently. Clear layout and quick access allow users to reuse and update resumes easily.</p>
+            <h1 className='text-lg sm:text-xl lg:text-2xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Recent Payments</h1>
+            <p className='leading-6 lg:leading-8 text-sm sm:text-base mt-2'>Last few transactions with sender + amount + time</p>
             <div className="project-images bg-gray-100 w-full h-64 sm:h-80 lg:h-180 rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center p-4 sm:p-6 lg:p-8">
-                    <img src="/images/resumeX-resume-saved.png" className='h-full w-full object-contain' alt="ResumeX Saved Resumes" />
+                    <img src="/images/paytm-watch-recent-payment.png" className='h-full w-full object-contain' alt="ResumeX Resume Builder" />
             </div>
 
-            <h1 className='text-2xl sm:text-3xl lg:text-4xl tracking-tighter leading-tight lg:leading-14 font-normal mt-8 lg:mt-12 text-center'>Thank you for taking the time to explore <span className='font-semibold'>ResumeX.</span></h1>
-            <p className='leading-6 lg:leading-8 text-center max-w-xl mx-auto mt-4 mb-8 lg:mb-16 text-sm sm:text-base'>This project was a great opportunity to design a user-focused, efficient, and modern UI that helps job seekers save time and apply smarter.</p>
+            <h1 className='text-lg sm:text-xl lg:text-2xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Big Payment Alerts</h1>
+            <p className='leading-6 lg:leading-8 text-sm sm:text-base mt-2'>High-value payments highlighted</p>
+            <div className="project-images bg-gray-100 w-full h-64 sm:h-80 lg:h-180 rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center p-4 sm:p-6 lg:p-8">
+                    <img src="/images/paytm-watch-big-payment.png" className='h-full w-full object-contain' alt="ResumeX Resume Builder" />
+            </div>
+
+            <h1 className='text-lg sm:text-xl lg:text-2xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Pending Settlements</h1>
+            <p className='leading-6 lg:leading-8 text-sm sm:text-base mt-2'>Track ongoing or delayed UPI transfers with transfer details</p>
+            <div className="project-images bg-gray-100 w-full h-64 sm:h-80 lg:h-180 rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center p-4 sm:p-6 lg:p-8">
+                    <img src="/images/paytm-watch-pending-payment.png" className='h-full w-full object-contain' alt="ResumeX Resume Builder" />
+            </div>
+
+            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>From Screens to Experience</h1>
+            <p className='mt-2 leading-6 lg:leading-8 text-sm sm:text-base'>Explore the smartwatch app in action — experience instant payment alerts and real-time business insights at a glance.</p>
+            <div className="project-images bg-gray-100 w-full h-[90vh] sm:h-[500px] lg:h-[600px] rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center p-2 sm:p-4 lg:p-6">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://embed.figma.com/proto/lZucvRLkuKY9g82aMDY4Xn/UPI-Watch?page-id=0%3A1&node-id=2-61&p=f&viewport=206%2C311%2C0.33&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A2&embed-host=share"
+                // allowFullScreen
+                title="Paytm Watch Prototype"
+              ></iframe>
+            </div>
+
+            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Impact</h1>
+            <ul className='mt-4 leading-6 lg:leading-8 list-inside text-sm sm:text-base'>
+              <li className='mb-2 list-disc'>Shop owners can track UPI payments instantly without checking their phone.</li>
+              <li className='mb-2 list-disc'>Big payments are never missed, boosting confidence and cash flow awareness.</li>
+              <li className='mb-2 list-disc'>Daily target visualization motivates owners to hit sales goals.</li>
+              <li className='mb-2 list-disc'>Quick actions streamline routine operations (show QR, reorder stock).</li>
+              <li className='mb-2 list-disc'>App is lightweight, glanceable, and fully personalized, reducing cognitive load during busy shop hours.</li>
+            </ul>
+
+            <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Key Metrics / Success Indicators</h1>
+            <ul className='mt-4 leading-6 lg:leading-8 list-inside text-sm sm:text-base'>
+              <li className='mb-2 list-disc'><span className='font-semibold'>Fewer Phone Checks:</span> Could reduce shop interruptions by up to 80%.</li>
+              <li className='mb-2 list-disc'><span className='font-semibold'>Big Payment Awareness:</span> Expected to improve visibility of high-value transactions significantly.</li>
+              <li className='mb-2 list-disc'><span className='font-semibold'>Positive Adoption:</span> Anticipated strong uptake and appreciation from small shop owners for glanceable insights.</li>
+            </ul>
+
+            <h1 className='text-2xl sm:text-3xl lg:text-4xl tracking-tighter leading-tight lg:leading-14 font-normal mt-8 lg:mt-12 text-center'>
+              Thank you for exploring <span className='font-semibold'>Paytm Watch.</span>
+            </h1>
+            <p className='leading-6 lg:leading-8 text-center max-w-xl mx-auto mt-4 mb-8 lg:mb-16 text-sm sm:text-base'>
+              This project was an exciting opportunity to design a glanceable, user-focused smartwatch experience that helps small shop owners track UPI payments instantly and manage their daily operations smarter.
+            </p>
+
         </div>
   )
 }

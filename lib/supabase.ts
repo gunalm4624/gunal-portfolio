@@ -15,3 +15,6 @@ export interface PersonalWork {
   created_at: string
   updated_at: string
 }
+
+// Type used when creating a new personal work entry (client-side -> insert)
+export type CreatePersonalWorkData = Omit<PersonalWork, 'id' | 'created_at' | 'updated_at'>

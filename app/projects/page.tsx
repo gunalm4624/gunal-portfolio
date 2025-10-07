@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import React from 'react'
+import SmoothScrollWrapper from '@/components/ui/smooth-scroll-wrapper'
 
 const Projects = () => {
   return (
-    <div className='mt-16 lg:mt-24 px-4 lg:px-0'>
-        <div className="text-center lg:text-left">
+    <SmoothScrollWrapper className='mt-16 lg:mt-24 px-4 lg:px-0'>
+        <SmoothScrollWrapper className="text-center lg:text-left">
           <h1 className='text-2xl sm:text-3xl lg:text-4xl tracking-tighter leading-tight lg:leading-14 font-medium'>Explore my latest Projects</h1>
           <p className='mt-2 text-sm sm:text-base text-gray-700 leading-6 lg:leading-8'>These projects showcase my commitment to crafting unique, high-performance digital experiences tailored to every need.</p>
-        </div>
+        </SmoothScrollWrapper>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-8 lg:mt-12">
         <Link href="/projects/ResumeX">
             <div className="bg-white rounded-[18px] p-2 hover:shadow-lg transition-shadow duration-300">
@@ -34,7 +35,7 @@ const Projects = () => {
             <Link href="/projects/paytm-watch">
             <div className="bg-white rounded-[18px] p-2 hover:shadow-lg transition-shadow duration-300">
                 <div className="w-full h-64 sm:h-72 lg:h-85 bg-gray-100 rounded-[12px] flex items-end justify-center overflow-hidden p-5">
-                    <img src="/images/paytm-watch-ui.png" className='h-full object-cover' alt="Skill Barter" />
+                    <img src="/images/payrm-watch-today-payment.png" className=' h-full object-cover' alt="Skill Barter" />
                 </div>
                 <div className='px-3 py-2 flex flex-col gap-0.5'>
                 <h1 className='text-base sm:text-lg font-medium'>Paytm - Watch UI</h1>
@@ -42,17 +43,19 @@ const Projects = () => {
                 </div>
             </div>
             </Link>
+            <Link href='/projects/sbi-portal'>
             <div className="bg-white rounded-[18px] p-2 hover:shadow-lg transition-shadow duration-300">
                 <div className="w-full h-64 sm:h-72 lg:h-85 bg-gray-100 rounded-[12px] flex items-end justify-center overflow-hidden">
-                    <img src="/images/project2.png" className='w-full object-cover' alt="Project Placeholder" />
+                    <img src="/images/sbi-qc-cover.png" className='h-full object-cover' alt="sbi-qc" />
                 </div>
                 <div className='px-3 py-2 flex flex-col gap-0.5'>
                 <h1 className='text-base sm:text-lg font-medium'>SBI - Merchant Verification Portal</h1>
                 <p className='text-xs sm:text-sm text-gray-600 mb-0'>AUG - 2023</p>
                 </div>
             </div>
+            </Link>
         </div>
-    </div>
+    </SmoothScrollWrapper>
   )
 }
 
