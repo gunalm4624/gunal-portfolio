@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Menu, X } from 'lucide-react'
@@ -31,13 +32,20 @@ const Navbar = () => {
     <nav className='navbar flex justify-between items-center px-4 lg:px-0'>
       {/* Logo and Name */}
       <div className='flex items-center gap-3'>
-        <div className="gunalm-photo w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden">
-          <img src="/images/my-photo.png" alt="Gunal M" className="w-full h-full object-cover" />
+        <div className="gunalm-photo w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden relative">
+          <Image 
+            src="/images/my-photo.png" 
+            alt="Gunal M" 
+            fill
+            priority
+            className="object-cover" 
+            sizes="(max-width: 768px) 40px, 48px"
+          />
         </div>
-        <div className='gap-0.5 flex flex-col'>
+        <Link href="/" className='gap-0.5 flex flex-col'>
           <h1 className='text-sm sm:text-base font-medium'>Gunal M</h1>
           <p className='text-xs text-gray-600'>UI/UX Designer</p>
-        </div>
+        </Link>
       </div>
 
       {/* Desktop Navigation */}
@@ -78,10 +86,10 @@ const Navbar = () => {
                 <div className="gunalm-photo w-12 h-12 rounded-full overflow-hidden">
                   <img src="/images/my-photo.png" alt="Gunal M" className="w-full h-full object-cover" />
                 </div>
-                <div className='gap-0.5 flex flex-col'>
+                <Link href="/" className='gap-0.5 flex flex-col' onClick={() => setIsOpen(false)}>
                   <h1 className='text-base font-medium'>Gunal M</h1>
                   <p className='text-sm text-gray-600'>UI/UX Designer</p>
-                </div>
+                </Link>
               </div>
 
               {/* Mobile Navigation Links */}

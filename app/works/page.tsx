@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { supabase, PersonalWork } from '@/lib/supabase';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
@@ -77,10 +78,12 @@ export default function Works() {
             {currentWorks.map((work) => (
               <div key={work.id} className="bg-white rounded-[18px] p-2 hover:shadow-lg transition-shadow duration-700 group">
                 <div className="relative w-full pb-[125%] bg-gray-100 rounded-[12px] overflow-hidden">
-                  <img 
+                  <Image 
                     src={work.image_url} 
-                    className='absolute inset-0 w-full h-full object-cover scale-100 group-hover:scale-103 transition-all duration-700 ease-out' 
-                    alt={work.title} 
+                    alt={work.title}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className='object-cover scale-100 group-hover:scale-103 transition-all duration-700 ease-out'
                   />
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-700">
                     <div 

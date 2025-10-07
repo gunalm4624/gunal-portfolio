@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import React from 'react'
 import SmoothScrollWrapper from '@/components/ui/smooth-scroll-wrapper'
 
@@ -12,8 +13,14 @@ const Projects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-8 lg:mt-12">
         <Link href="/projects/ResumeX">
             <div className="bg-white rounded-[18px] p-2 hover:shadow-lg transition-shadow duration-300">
-                <div className="w-full h-64 sm:h-72 lg:h-85 bg-gray-100 rounded-[12px] flex items-center justify-center overflow-hidden">
-                    <img src="/images/resumeX-cover.png" className='w-full object-cover' alt="ResumeX AI Resume Rewriter" />
+                <div className="w-full h-64 sm:h-72 lg:h-85 bg-gray-100 rounded-[12px] overflow-hidden relative p-4 sm:p-6">
+                    <Image 
+                      src="/images/resumeX-cover.png" 
+                      alt="ResumeX AI Resume Rewriter" 
+                      fill
+                      className="object-contain" 
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
                 </div>
                 <div className='px-3 py-2 flex flex-col gap-0.5'>
                 <h1 className='text-base sm:text-lg font-medium'>ResumeX - AI Powered Resume Rewritter</h1>
@@ -23,8 +30,14 @@ const Projects = () => {
             </Link>
             <Link href="/projects/Axis-Bank">
             <div className="bg-white rounded-[18px] p-2 hover:shadow-lg transition-shadow duration-300">
-                <div className="w-full h-64 sm:h-72 lg:h-85 bg-gray-100 rounded-[12px] flex items-end justify-center overflow-hidden">
-                    <img src="/images/axis-thumbnail.png" className='h-full w-full object-cover' alt="Axis Bank UPI SDK" />
+                <div className="w-full h-64 sm:h-72 lg:h-85 bg-gray-100 rounded-[12px] overflow-hidden relative p-4 sm:p-6">
+                    <Image 
+                      src="/images/axis-thumbnail.png" 
+                      alt="Axis Bank UPI SDK" 
+                      fill
+                      className="object-contain" 
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
                 </div>
                 <div className='px-3 py-2 flex flex-col gap-0.5'>
                 <h1 className='text-base sm:text-lg font-medium'>Axis Bank - UPI SDK</h1>
@@ -34,8 +47,14 @@ const Projects = () => {
             </Link>
             <Link href="/projects/paytm-watch">
             <div className="bg-white rounded-[18px] p-2 hover:shadow-lg transition-shadow duration-300">
-                <div className="w-full h-64 sm:h-72 lg:h-85 bg-gray-100 rounded-[12px] flex items-end justify-center overflow-hidden p-5">
-                    <img src="/images/payrm-watch-today-payment.png" className=' h-full object-cover' alt="Skill Barter" />
+                <div className="w-full h-64 sm:h-72 lg:h-85 bg-gray-100 rounded-[12px] overflow-hidden relative flex items-center justify-center">
+                    <Image 
+                        src="/images/payrm-watch-today-payment.png" 
+                        alt="Paytm Watch UI" 
+                        className="object-contain m-auto" 
+                        width={190}
+                        height={100}
+                    />
                 </div>
                 <div className='px-3 py-2 flex flex-col gap-0.5'>
                 <h1 className='text-base sm:text-lg font-medium'>Paytm - Watch UI</h1>
@@ -45,8 +64,14 @@ const Projects = () => {
             </Link>
             <Link href='/projects/sbi-portal'>
             <div className="bg-white rounded-[18px] p-2 hover:shadow-lg transition-shadow duration-300">
-                <div className="w-full h-64 sm:h-72 lg:h-85 bg-gray-100 rounded-[12px] flex items-end justify-center overflow-hidden">
-                    <img src="/images/sbi-qc-cover.png" className='h-full object-cover' alt="sbi-qc" />
+                <div className="w-full h-64 sm:h-72 lg:h-85 bg-gray-100 rounded-[12px] overflow-hidden relative p-4 sm:p-6">
+                    <Image 
+                      src="/images/sbi-qc-cover.png" 
+                      alt="SBI QC Portal" 
+                      fill
+                      className="object-contain" 
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
                 </div>
                 <div className='px-3 py-2 flex flex-col gap-0.5'>
                 <h1 className='text-base sm:text-lg font-medium'>SBI - Merchant Verification Portal</h1>

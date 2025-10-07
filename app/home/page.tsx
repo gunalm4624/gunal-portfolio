@@ -1,5 +1,6 @@
 import { Dribbble, Instagram, Linkedin, Youtube } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 import React from 'react'
 import SmoothScrollWrapper from '@/components/ui/smooth-scroll-wrapper'
 
@@ -23,22 +24,29 @@ const HomePage = () => {
               <Dribbble size={20} strokeWidth={1.5} />
             </a>
         </div>
-        <div className="flex flex-col sm:flex-row mt-7 gap-2 justify-center lg:justify-start">
+        <div className="flex flex-col sm:flex-row mt-7 gap-2 justify-center lg:justify-start w-full">
             <a 
               href="/resume.pdf" 
               download="Gunal_M_Resume.pdf"
-              className='px-4 py-2 bg-black text-white rounded-lg text-sm primary-button py-3 flex items-center justify-center gap-2 hover:bg-gray-800 transition-colors'
+              className='w-full sm:w-auto px-4 py-2 bg-black text-white rounded-lg text-sm primary-button py-3 flex items-center justify-center gap-2 hover:bg-gray-800 transition-colors'
             >
               Download Resume
             </a>
-            <Link href="/contact-me">
-              <button className='px-4 py-2 bg-black text-white rounded-lg text-sm py-3 hover:bg-gray-800 transition-colors'>Get in Touch</button>
+            <Link href="/contact-me" className="w-full sm:w-auto">
+              <button className='w-full px-4 py-2 bg-black text-white rounded-lg text-sm py-3 hover:bg-gray-800 transition-colors'>Get in Touch</button>
             </Link>
         </div>
       </SmoothScrollWrapper>
       <SmoothScrollWrapper className="bg-white lg:col-span-4 rounded-[18px] p-3 text-left">
-        <div className="w-full h-94 sm:h-72 lg:h-78 bg-gray-100 rounded-[14px] flex items-end justify-center overflow-hidden">
-            <img src="/images/gunal-photo.png" className='w-100 sm:w-70 lg:w-75' alt="" />
+        <div className="w-full h-94 sm:h-72 lg:h-78 bg-gray-100 rounded-[14px] flex items-end justify-center overflow-hidden relative">
+            <Image 
+              src="/images/gunal-photo.png"
+              alt="Gunal M Profile Photo"
+              priority
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className='object-cover object-bottom'
+            />
         </div>
         <div className='px-3 py-2 flex flex-col gap-0.5'>
         <h1 className='text-base sm:text-lg font-medium'>Gunal M</h1>

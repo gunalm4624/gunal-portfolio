@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const ProjectTemplate = () => {
   return (
@@ -24,8 +25,15 @@ const ProjectTemplate = () => {
                 <p className='mt-1 text-xs sm:text-sm tracking-normal'>AUG 2023</p>
               </div>
             </div>
-            <div className="project-images bg-gray-100 w-full h-64 sm:h-80 lg:h-150 rounded-[18px] overflow-hidden mt-8 lg:mt-12 flex items-center justify-center p-4 sm:p-6 lg:p-8">
-                <img src="/images/sbi-qc-cover.png" className=' h-160 object-cover' alt="ResumeX Cover" />
+            <div className="project-images bg-gray-100 w-full h-64 sm:h-80 lg:h-150 rounded-[18px] overflow-hidden mt-8 lg:mt-12 relative p-4 sm:p-6 lg:p-8">
+                <Image 
+                  src="/images/sbi-qc-cover.png" 
+                  alt="SBI Portal Cover" 
+                  fill
+                  priority
+                  className="object-cover" 
+                  sizes="(max-width: 768px) 100vw, 1200px"
+                />
             </div>
 
             <h1 className='text-xl sm:text-2xl lg:text-3xl tracking-tighter leading-tight lg:leading-14 font-medium mt-8 lg:mt-12'>Main Goal</h1>
