@@ -106,7 +106,7 @@ export default function PersonalWorksManagePage() {
   };
 
   const addNewWork = () => {
-    router.push('/personal-works-manage/add');
+    router.push('/manage-works/add');
   };
 
   useEffect(() => {

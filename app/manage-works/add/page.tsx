@@ -89,11 +89,11 @@ export default function AddPersonalWorkPage() {
           <div className="flex justify-between items-center mb-8">
             <div className="flex items-center gap-4">
               <button
-                onClick={() => router.push('/personal-works-manage')}
+                onClick={() => router.push('/manage-works')}
                 className="flex items-center gap-2 text-gray-600 hover:text-gray-800"
               >
                 <IconArrowLeft size={16} />
-                Back to Personal Works Management
+                Back
               </button>
               <h1 className="text-3xl font-bold">Add New Personal Work</h1>
             </div>
